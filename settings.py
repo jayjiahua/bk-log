@@ -29,11 +29,7 @@ if "BKPAAS_ENVIRONMENT" in os.environ:
 # V2判断环境的环境变量为BK_ENV
 else:
     PAAS_V2_ENVIRONMENT = os.environ.get("BK_ENV", "development")
-    ENVIRONMENT = {
-        "development": "dev",
-        "testing": "stag",
-        "production": "prod",
-    }.get(PAAS_V2_ENVIRONMENT)
+    ENVIRONMENT = {"development": "dev", "testing": "stag", "production": "prod"}.get(PAAS_V2_ENVIRONMENT)
 DJANGO_CONF_MODULE = "config.{env}".format(env=ENVIRONMENT)
 
 try:

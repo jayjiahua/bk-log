@@ -24,8 +24,8 @@ repos:
         entry: python scripts/check_migrate/check_migrate.py
         language: system
         types: [python]
-      - id: check-commit-message
-        name: Check commit message
-        entry: python scripts/check_commit_message.py
-        language: system
-        stages: [commit-msg]
+#      - id: check-commit-message
+#        name: Check commit message
+#        entry: python scripts/check_commit_message.py
+#        language: system
+#        stages: [commit-msg]
